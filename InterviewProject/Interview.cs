@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace InterviewProject
 {
@@ -287,6 +288,98 @@ namespace InterviewProject
                 }
                 Console.WriteLine(string.Join(" ", ls));
             }
+        }
+
+        /// <summary>
+        /// 处理去重字符串
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <returns></returns>
+        public string DealWithDuplicatedString(string sourceStr)
+        {
+            List<char> ls = new List<char>();
+            foreach (char c in sourceStr)
+            {
+                if (!ls.Contains(c))
+                    ls.Add(c);
+            }
+
+            return string.Join("", ls);
+        }
+
+        /// <summary>
+        /// 用最快的方式打乱数组
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <returns></returns>
+        public int[] DisorderArray(int[] sourceArr)
+        {
+            Random rd = new Random();
+            int index = 0, temp = 0;
+            for (int i = 0; i < sourceArr.Length; i++)
+            {
+                index = rd.Next(sourceArr.Length);
+                temp = sourceArr[0];
+                sourceArr[0] = sourceArr[index];
+                sourceArr[index] = temp;
+            }
+
+            return sourceArr;
+        }
+
+        /// <summary>
+        /// 统计原字符串中各个字符的出现的个数
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        public void CalculateCharCount(string sourceStr)
+        {
+            if (string.IsNullOrEmpty(sourceStr)) Console.WriteLine("空字符串！");
+
+            List<char> ls = new List<char>();
+            Regex regxNum = new Regex(@"^\d$");
+            Regex regxAlpha = new Regex(@"^\w$");
+            Regex regxWhiteSpace = new Regex(@"^\s$");
+            Dictionary<string, int> charCountDict = new Dictionary<string, int>();
+            foreach (char c in sourceStr)
+            {
+                if (regxNum.IsMatch(c.ToString()))
+                {
+                    if (!charCountDict.ContainsKey("num"))
+                        charCountDict.Add("num", 1);
+                    else
+                        charCountDict["num"]++;
+                }
+                else if (regxAlpha.IsMatch(c.ToString()))
+                {
+                    if (!charCountDict.ContainsKey("alpha"))
+                        charCountDict.Add("alpha", 1);
+                    else
+                        charCountDict["alpha"]++;
+                }
+                else if (regxWhiteSpace.IsMatch(c.ToString()))
+                {
+                    if (!charCountDict.ContainsKey("whitespace"))
+                        charCountDict.Add("whitespace", 1);
+                    else
+                        charCountDict["whitespace"]++;
+                }
+                else
+                {
+                    if (!charCountDict.ContainsKey("others"))
+                        charCountDict.Add("others", 1);
+                    else
+                        charCountDict["others"]++;
+                }
+            }
+
+            int numCount = !charCountDict.ContainsKey("num") ? 0 : charCountDict["num"];
+            int alphaCount = !charCountDict.ContainsKey("alpha") ? 0 : charCountDict["alpha"];
+            int whiteSpaceCount = !charCountDict.ContainsKey("whitespace") ? 0 : charCountDict["whitespace"];
+            int othersCount = !charCountDict.ContainsKey("others") ? 0 : charCountDict["others"];
+
+            Console.WriteLine("英文字母出现次数：{0}，数字出现次数{1}，空格符出现次数：{2}，其他字符出现次数：{3}", alphaCount, numCount, whiteSpaceCount, othersCount);
+
+
         }
     }
 }
