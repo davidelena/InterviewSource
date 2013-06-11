@@ -1,0 +1,5 @@
+G:\软件项目\InterviewProject\InterviewProject\bin\Debug\InterviewProject.exe
+G:\软件项目\InterviewProject\InterviewProject\bin\Debug\InterviewProject.pdb
+G:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.exe
+G:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.pdb
