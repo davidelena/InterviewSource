@@ -381,5 +381,27 @@ namespace InterviewProject
 
 
         }
+
+        /// <summary>
+        /// 翻转数组
+        /// </summary>
+        /// <param name="sourceArr"></param>
+        /// <returns></returns>
+        public int[] ReverseArray(int[] sourceArr)
+        {
+            Stack<int> stack = new Stack<int>();
+            int[] resultArr = new int[sourceArr.Length];
+            for (int i = 0; i < sourceArr.Length; i++)
+            {
+                stack.Push(sourceArr[i]);   
+            }
+            int j = 0;
+            while (stack.Count>0)
+            {
+                resultArr[j] = stack.Pop();
+                j++;
+            }
+            return resultArr;
+        }
     }
 }

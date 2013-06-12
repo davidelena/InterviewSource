@@ -23,8 +23,11 @@ namespace InterviewProject
             //test.DisorderArray(sourceArr);
             //Console.WriteLine(string.Join(",", sourceArr));
 
-            string sourceStr = Console.ReadLine();
-            test.CalculateCharCount(sourceStr);
+            //string sourceStr = Console.ReadLine();
+            //test.CalculateCharCount(sourceStr);
+
+            int[] sourceArr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Console.WriteLine(string.Join(",", test.ReverseArray(sourceArr)));
 
             Console.ReadLine();
         }
