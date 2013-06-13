@@ -26,8 +26,10 @@ namespace InterviewProject
             //string sourceStr = Console.ReadLine();
             //test.CalculateCharCount(sourceStr);
 
-            int[] sourceArr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            Console.WriteLine(string.Join(",", test.ReverseArray(sourceArr)));
+            //int[] sourceArr = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //Console.WriteLine(string.Join(",", test.ReverseArray(sourceArr)));
+
+            Console.WriteLine(test.Fib(7));
 
             Console.ReadLine();
         }

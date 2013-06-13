@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Reflection;
 
 namespace InterviewProject
 {
@@ -393,15 +394,30 @@ namespace InterviewProject
             int[] resultArr = new int[sourceArr.Length];
             for (int i = 0; i < sourceArr.Length; i++)
             {
-                stack.Push(sourceArr[i]);   
+                stack.Push(sourceArr[i]);
             }
             int j = 0;
-            while (stack.Count>0)
+            while (stack.Count > 0)
             {
                 resultArr[j] = stack.Pop();
                 j++;
             }
             return resultArr;
+        }
+
+        /// <summary>
+        /// fibonacci函数
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
+        public int Fib(int n)
+        {
+            if (n == 1 || n == 2)
+            {
+                return 1;
+            }
+
+            else return Fib(n - 2) + Fib(n - 1);
         }
     }
 }
