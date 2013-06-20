@@ -1,0 +1,5 @@
+J:\软件项目\InterviewProject\IOCProject\bin\Debug\IOCProject.exe
+J:\软件项目\InterviewProject\IOCProject\bin\Debug\IOCProject.pdb
+J:\软件项目\InterviewProject\IOCProject\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\软件项目\InterviewProject\IOCProject\obj\x86\Debug\IOCProject.exe
+J:\软件项目\InterviewProject\IOCProject\obj\x86\Debug\IOCProject.pdb

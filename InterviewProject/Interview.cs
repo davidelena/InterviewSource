@@ -419,5 +419,16 @@ namespace InterviewProject
 
             else return Fib(n - 2) + Fib(n - 1);
         }
+
+        /// <summary>
+        /// SayHello
+        /// </summary>
+        /// <param name="userkey"></param>
+        /// <param name="message"></param>
+        /// <param name="num"></param>
+        public void SayHello(string userkey, string message, int num)
+        {
+            Console.WriteLine("UserKey:{0},Message:{1},num:{2}", userkey, message, num);
+        }
     }
 }

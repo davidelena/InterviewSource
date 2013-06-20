@@ -3,3 +3,10 @@ G:\软件项目\InterviewProject\InterviewProject\bin\Debug\InterviewProject.pdb
 G:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\ResolveAssemblyReference.cache
 G:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.exe
 G:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.pdb
+H:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.exe
+H:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.pdb
+J:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.exe
+J:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\InterviewProject.pdb
+J:\软件项目\InterviewProject\InterviewProject\bin\Debug\InterviewProject.exe
+J:\软件项目\InterviewProject\InterviewProject\bin\Debug\InterviewProject.pdb
+J:\软件项目\InterviewProject\InterviewProject\obj\x86\Debug\ResolveAssemblyReference.cache
