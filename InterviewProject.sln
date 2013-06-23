@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCProject", "IOCProject\IO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorProject", "DecoratorProject\DecoratorProject.csproj", "{C82086E7-3C89-4D8B-A0B8-9F63E8F19B5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAttributeProject", "CustomAttributeProject\CustomAttributeProject.csproj", "{C4E764A6-9060-4F30-970A-583D32BEFE90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,6 +27,10 @@ Global
 		{C82086E7-3C89-4D8B-A0B8-9F63E8F19B5E}.Debug|x86.Build.0 = Debug|x86
 		{C82086E7-3C89-4D8B-A0B8-9F63E8F19B5E}.Release|x86.ActiveCfg = Release|x86
 		{C82086E7-3C89-4D8B-A0B8-9F63E8F19B5E}.Release|x86.Build.0 = Release|x86
+		{C4E764A6-9060-4F30-970A-583D32BEFE90}.Debug|x86.ActiveCfg = Debug|x86
+		{C4E764A6-9060-4F30-970A-583D32BEFE90}.Debug|x86.Build.0 = Debug|x86
+		{C4E764A6-9060-4F30-970A-583D32BEFE90}.Release|x86.ActiveCfg = Release|x86
+		{C4E764A6-9060-4F30-970A-583D32BEFE90}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

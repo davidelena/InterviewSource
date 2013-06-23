@@ -1,0 +1,5 @@
+G:\软件项目\InterviewProject\CustomAttributeProject\bin\Debug\CustomAttributeProject.exe
+G:\软件项目\InterviewProject\CustomAttributeProject\bin\Debug\CustomAttributeProject.pdb
+G:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\CustomAttributeProject.exe
+G:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\CustomAttributeProject.pdb

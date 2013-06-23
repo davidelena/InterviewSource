@@ -3,3 +3,8 @@ J:\软件项目\InterviewProject\DecoratorProject\bin\Debug\DecoratorProject.exe
 J:\软件项目\InterviewProject\DecoratorProject\bin\Debug\DecoratorProject.pdb
 J:\软件项目\InterviewProject\DecoratorProject\obj\x86\Debug\DecoratorProject.exe
 J:\软件项目\InterviewProject\DecoratorProject\obj\x86\Debug\DecoratorProject.pdb
+G:\软件项目\InterviewProject\DecoratorProject\obj\x86\Debug\DecoratorProject.exe
+G:\软件项目\InterviewProject\DecoratorProject\obj\x86\Debug\DecoratorProject.pdb
+G:\软件项目\InterviewProject\DecoratorProject\bin\Debug\DecoratorProject.exe
+G:\软件项目\InterviewProject\DecoratorProject\bin\Debug\DecoratorProject.pdb
+G:\软件项目\InterviewProject\DecoratorProject\obj\x86\Debug\ResolveAssemblyReference.cache
