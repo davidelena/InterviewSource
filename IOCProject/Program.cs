@@ -5,6 +5,9 @@ using System.Text;
 
 namespace IOCProject
 {
+    /// <summary>
+    /// IOD（依赖倒置，控制反转）简单实例
+    /// </summary>
     class Program
     {
         static void Main(string[] args)

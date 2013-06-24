@@ -3,3 +3,8 @@ G:\软件项目\InterviewProject\CustomAttributeProject\bin\Debug\CustomAttribut
 G:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\ResolveAssemblyReference.cache
 G:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\CustomAttributeProject.exe
 G:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\CustomAttributeProject.pdb
+J:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\CustomAttributeProject.exe
+J:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\CustomAttributeProject.pdb
+J:\软件项目\InterviewProject\CustomAttributeProject\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\软件项目\InterviewProject\CustomAttributeProject\bin\Debug\CustomAttributeProject.exe
+J:\软件项目\InterviewProject\CustomAttributeProject\bin\Debug\CustomAttributeProject.pdb

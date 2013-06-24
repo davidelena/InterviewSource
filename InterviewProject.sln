@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorProject", "Decorat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomAttributeProject", "CustomAttributeProject\CustomAttributeProject.csproj", "{C4E764A6-9060-4F30-970A-583D32BEFE90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOPProject", "AOPProject\AOPProject.csproj", "{AEF631DE-3FE1-4F38-81DE-8CE450279842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverProject", "ObserverProject\ObserverProject.csproj", "{4AE4F8D0-4121-4172-B1D6-0223E0D297B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,6 +35,14 @@ Global
 		{C4E764A6-9060-4F30-970A-583D32BEFE90}.Debug|x86.Build.0 = Debug|x86
 		{C4E764A6-9060-4F30-970A-583D32BEFE90}.Release|x86.ActiveCfg = Release|x86
 		{C4E764A6-9060-4F30-970A-583D32BEFE90}.Release|x86.Build.0 = Release|x86
+		{AEF631DE-3FE1-4F38-81DE-8CE450279842}.Debug|x86.ActiveCfg = Debug|x86
+		{AEF631DE-3FE1-4F38-81DE-8CE450279842}.Debug|x86.Build.0 = Debug|x86
+		{AEF631DE-3FE1-4F38-81DE-8CE450279842}.Release|x86.ActiveCfg = Release|x86
+		{AEF631DE-3FE1-4F38-81DE-8CE450279842}.Release|x86.Build.0 = Release|x86
+		{4AE4F8D0-4121-4172-B1D6-0223E0D297B7}.Debug|x86.ActiveCfg = Debug|x86
+		{4AE4F8D0-4121-4172-B1D6-0223E0D297B7}.Debug|x86.Build.0 = Debug|x86
+		{4AE4F8D0-4121-4172-B1D6-0223E0D297B7}.Release|x86.ActiveCfg = Release|x86
+		{4AE4F8D0-4121-4172-B1D6-0223E0D297B7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
