@@ -12,6 +12,8 @@ namespace ObserverProject
     {
         private double temperature;
         private string details;
+        public delegate void CustomEventHandler();
+        public event CustomEventHandler CustomUpdate;
 
         public WeatherSignBoard()
         {
@@ -30,6 +32,15 @@ namespace ObserverProject
             get { return temperature; }
             set { temperature = value; }
         }
+
+        ///// <summary>
+        ///// 也可以使用event委托的方式来添加函数引用注册相应的Update事件
+        ///// </summary>
+        //public override void Notify()
+        //{
+        //    if (CustomUpdate != null)
+        //        CustomUpdate();
+        //}
 
         /// <summary>
         /// 测试改变

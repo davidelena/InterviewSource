@@ -41,7 +41,7 @@ namespace ObserverProject
         /// <summary>
         /// 通知所有观察者对象
         /// </summary>
-        public void Notify()
+        public virtual void Notify()
         {
             foreach (Observer observer in observerLs)
             {

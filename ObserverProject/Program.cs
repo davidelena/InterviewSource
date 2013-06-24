@@ -23,6 +23,7 @@ namespace ObserverProject
 
             foreach (var item in observerLs)
             {
+                //signBoard.CustomUpdate += item.Update;
                 signBoard.Attach(item);
             }
 
