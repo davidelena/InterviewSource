@@ -4,11 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Reflection;
+using System.Security.Cryptography;
+using System.IO;
 
 namespace InterviewProject
 {
     public class Interview
     {
+        private const string DEFAULT_KEY = "daviddai";
+
         /// <summary>
         /// 将10进制数转化为26进制
         /// </summary>
@@ -429,6 +433,77 @@ namespace InterviewProject
         public void SayHello(string userkey, string message, int num)
         {
             Console.WriteLine("UserKey:{0},Message:{1},num:{2}", userkey, message, num);
+        }
+
+        /// <summary>
+        /// 最基本的MD5数字签名应用
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <returns></returns>
+        public string EncryptString(string sourceStr)
+        {
+            MD5 md5 = new MD5CryptoServiceProvider();
+            List<byte> bytesLs = md5.ComputeHash(Encoding.Default.GetBytes(sourceStr), 0, sourceStr.Length).ToList<byte>();
+            StringBuilder sb = new StringBuilder();
+            bytesLs.ForEach(n => sb.Append(n.ToString("x")));
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// DES加密
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <returns></returns>
+        public string DesEncryptString(string sourceStr)
+        {
+            if (string.IsNullOrEmpty(sourceStr)) return string.Empty;
+
+            byte[] bytes = Encoding.Default.GetBytes(sourceStr);
+            using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+            {
+                des.Key = Encoding.Default.GetBytes(DEFAULT_KEY);
+                des.IV = Encoding.Default.GetBytes(DEFAULT_KEY);
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    CryptoStream cs = new CryptoStream(ms, des.CreateEncryptor(), CryptoStreamMode.Write);
+                    cs.Write(bytes, 0, bytes.Length);
+                    cs.FlushFinalBlock();
+                    ms.Position = 0;
+
+                    StringBuilder sb = new StringBuilder();
+                    ms.ToArray().ToList().ForEach(n => sb.AppendFormat("{0:x2}", n));
+
+                    return sb.ToString();
+                }
+            }
+        }
+
+        public string DesDecryptString(string sourceStr)
+        {
+            if (string.IsNullOrEmpty(sourceStr)) return null;
+            return string.Empty;
+
+            //if (string.IsNullOrEmpty(key)) return null;
+
+            //byte[] buffer = new byte[str.Length / 2];
+            //for (int i = 0; i < buffer.Length; i++)
+            //{
+            //    buffer[i] = Convert.ToByte(str.Substring(i * 2, 2), 16);
+            //}
+
+            //using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+            //{
+            //    des.Key = ASCIIEncoding.ASCII.GetBytes(key.Substring(0, 8));
+            //    des.IV = ASCIIEncoding.ASCII.GetBytes(key.Substring(0, 8));
+            //    using (MemoryStream ms = new MemoryStream())
+            //    {
+            //        CryptoStream cs = new CryptoStream(ms, des.CreateDecryptor(), CryptoStreamMode.Write);
+            //        cs.Write(buffer, 0, buffer.Length);
+            //        cs.FlushFinalBlock();
+            //        return Encoding.UTF8.GetString(ms.ToArray());
+            //    }
+            //}
         }
     }
 }
