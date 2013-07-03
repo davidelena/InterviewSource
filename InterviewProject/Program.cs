@@ -57,6 +57,10 @@ namespace InterviewProject
 
             //SyntaticSugar.ShowCommaSample(34);
 
+            #endregion
+
+            #region 加密算法测试
+
             //string password = "David123!";
             //Console.WriteLine("明码为：{0}", password);            
             //Console.WriteLine("加密后的：{0}", test.EncryptString(password));
@@ -65,16 +69,39 @@ namespace InterviewProject
             //Console.WriteLine("明码为：{0}", password2);
             //Console.WriteLine("加密后的：{0}", test.EncryptString(password2));
 
-            string password = "David123!";
-            Console.WriteLine("明码为：{0}", password);
-            string ap = test.DesEncryptString(password);
-            Console.WriteLine("加密后：{0}，源字符串长度：{1}，加密后长度：{2}", ap, password.Length, ap.Length);
-            Console.WriteLine();
-            Console.WriteLine("密文为：{0}", ap);
+            //string password = "David123!";
+            //Console.WriteLine("明码为：{0}", password);
+            //string ap = test.DesEncryptString(password);
+            //Console.WriteLine("加密后：{0}，源字符串长度：{1}，加密后长度：{2}", ap, password.Length, ap.Length);
+            //Console.WriteLine();
+            //Console.WriteLine("密文为：{0}", ap);
+            //Console.WriteLine("解密后：{0}", test.DesDecryptString(ap));
+
+            #endregion
+
+            #region 阶乘算法
+
+            Console.WriteLine(FactorialCal(4));
 
             #endregion
 
             Console.ReadLine();
+        }
+
+        private static int FactorialCal(int n)
+        {
+            //int result = 1;
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    result *= i;
+            //}
+
+            //return result;
+
+            if (n > 0)
+                return n * FactorialCal(n - 1);
+            else
+                return 1;
         }
     }
 }

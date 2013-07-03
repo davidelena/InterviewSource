@@ -3,3 +3,8 @@ J:\软件项目\InterviewProject\AOPProject\bin\Debug\AOPProject.pdb
 J:\软件项目\InterviewProject\AOPProject\obj\x86\Debug\ResolveAssemblyReference.cache
 J:\软件项目\InterviewProject\AOPProject\obj\x86\Debug\AOPProject.exe
 J:\软件项目\InterviewProject\AOPProject\obj\x86\Debug\AOPProject.pdb
+G:\软件项目\InterviewProject\AOPProject\bin\Debug\AOPProject.exe
+G:\软件项目\InterviewProject\AOPProject\bin\Debug\AOPProject.pdb
+G:\软件项目\InterviewProject\AOPProject\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\软件项目\InterviewProject\AOPProject\obj\x86\Debug\AOPProject.exe
+G:\软件项目\InterviewProject\AOPProject\obj\x86\Debug\AOPProject.pdb

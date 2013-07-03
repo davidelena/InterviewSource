@@ -458,7 +458,7 @@ namespace InterviewProject
         {
             if (string.IsNullOrEmpty(sourceStr)) return string.Empty;
 
-            byte[] bytes = Encoding.Default.GetBytes(sourceStr);
+            byte[] buffer = Encoding.Default.GetBytes(sourceStr);
             using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
             {
                 des.Key = Encoding.Default.GetBytes(DEFAULT_KEY);
@@ -467,7 +467,7 @@ namespace InterviewProject
                 using (MemoryStream ms = new MemoryStream())
                 {
                     CryptoStream cs = new CryptoStream(ms, des.CreateEncryptor(), CryptoStreamMode.Write);
-                    cs.Write(bytes, 0, bytes.Length);
+                    cs.Write(buffer, 0, buffer.Length);
                     cs.FlushFinalBlock();
                     ms.Position = 0;
 
@@ -479,10 +479,35 @@ namespace InterviewProject
             }
         }
 
+        /// <summary>
+        /// DES解密
+        /// </summary>
+        /// <param name="sourceStr"></param>
+        /// <returns></returns>
         public string DesDecryptString(string sourceStr)
         {
             if (string.IsNullOrEmpty(sourceStr)) return null;
-            return string.Empty;
+
+            byte[] buffer = new byte[sourceStr.Length / 2];
+
+            for (int i = 0; i < buffer.Length; i++)
+            {
+                buffer[i] = Convert.ToByte(sourceStr.Substring(i * 2, 2), 16);
+            }
+
+            using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
+            {
+                des.Key = Encoding.Default.GetBytes(DEFAULT_KEY);
+                des.IV = Encoding.Default.GetBytes(DEFAULT_KEY);
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    CryptoStream cs = new CryptoStream(ms, des.CreateDecryptor(), CryptoStreamMode.Write);
+                    cs.Write(buffer, 0, buffer.Length);
+                    cs.FlushFinalBlock();
+                    return Encoding.Default.GetString(ms.ToArray());
+                }
+            }
 
             //if (string.IsNullOrEmpty(key)) return null;
 

@@ -5,3 +5,6 @@ J:\软件项目\InterviewProject\ObserverProject\obj\x86\Debug\ObserverProject.e
 J:\软件项目\InterviewProject\ObserverProject\obj\x86\Debug\ObserverProject.pdb
 G:\软件项目\InterviewProject\ObserverProject\obj\x86\Debug\ObserverProject.exe
 G:\软件项目\InterviewProject\ObserverProject\obj\x86\Debug\ObserverProject.pdb
+G:\软件项目\InterviewProject\ObserverProject\bin\Debug\ObserverProject.exe
+G:\软件项目\InterviewProject\ObserverProject\bin\Debug\ObserverProject.pdb
+G:\软件项目\InterviewProject\ObserverProject\obj\x86\Debug\ResolveAssemblyReference.cache
