@@ -5,6 +5,7 @@ using System.Text;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.IO;
+using System.ComponentModel;
 
 namespace InterviewProject
 {
@@ -81,8 +82,30 @@ namespace InterviewProject
 
             #region 阶乘算法
 
-            Console.WriteLine(FactorialCal(4));
+            //Console.WriteLine(FactorialCal(4));
 
+            #endregion
+
+            #region TypeDescriptor
+            //AddHeader header = new AddHeader() { Id = 1, Name = "David", Password = "123456789" };
+            //foreach (PropertyDescriptor item in TypeDescriptor.GetProperties(header))
+            //{
+            //    Console.WriteLine(item.GetValue(header));
+            //}
+
+            //Dictionary<string, object> updateDict = new Dictionary<string, object>();
+            //updateDict.Add("id", 2);
+            //updateDict.Add("name", "davidupdate");
+            //updateDict.Add("password", "987654321");
+            //foreach (PropertyDescriptor item in TypeDescriptor.GetProperties(header))
+            //{
+            //    item.SetValue(header, updateDict[item.Name.ToLower()]);
+            //}
+
+            //foreach (PropertyDescriptor item in TypeDescriptor.GetProperties(header))
+            //{
+            //    Console.WriteLine(item.GetValue(header));
+            //}
             #endregion
 
             Console.ReadLine();

@@ -508,27 +508,6 @@ namespace InterviewProject
                     return Encoding.Default.GetString(ms.ToArray());
                 }
             }
-
-            //if (string.IsNullOrEmpty(key)) return null;
-
-            //byte[] buffer = new byte[str.Length / 2];
-            //for (int i = 0; i < buffer.Length; i++)
-            //{
-            //    buffer[i] = Convert.ToByte(str.Substring(i * 2, 2), 16);
-            //}
-
-            //using (DESCryptoServiceProvider des = new DESCryptoServiceProvider())
-            //{
-            //    des.Key = ASCIIEncoding.ASCII.GetBytes(key.Substring(0, 8));
-            //    des.IV = ASCIIEncoding.ASCII.GetBytes(key.Substring(0, 8));
-            //    using (MemoryStream ms = new MemoryStream())
-            //    {
-            //        CryptoStream cs = new CryptoStream(ms, des.CreateDecryptor(), CryptoStreamMode.Write);
-            //        cs.Write(buffer, 0, buffer.Length);
-            //        cs.FlushFinalBlock();
-            //        return Encoding.UTF8.GetString(ms.ToArray());
-            //    }
-            //}
         }
     }
 }
